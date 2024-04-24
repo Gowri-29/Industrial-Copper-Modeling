@@ -277,10 +277,10 @@ with tab1:
         for i in df_num:
             plot(df_num, i)
     if st.button("Treated_Skew_Data"):
-        for i in ['quantity tons', 'thickness', 'width', 'selling_price']:
+        for i in ['quantity tons', 'thickness', 'width']:
             plot(df_skewed, i)
     if st.button("Outlier_Treatment"):
-        for i in ['quantity tons', 'thickness', 'width', 'selling_price']:
+        for i in ['quantity tons', 'thickness', 'width']:
             plot(df_outiler, i)
         view_data =  df_outiler.head(5)
         st.table(view_data)   
