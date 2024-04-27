@@ -196,7 +196,7 @@ df_class = df_outiler.copy()
 # Prediction 2:
 def Status_prediction():
     Features = df_encode[["item type","quantity tons","status","customer","country","application","thickness","width","product_ref"]]
-    Target = df_encode["status"]
+    Target = df_class["status"]
     X_classification = Features
     y_classification = Target
     return(X_classification,y_classification)
