@@ -264,7 +264,7 @@ def prediction_model2(X, y, algorithm, cv=5):
 # streamlit:
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.header(':blue[_Industrial Copper Modeling Application_]')
-tab1, tab2, tab3, tab4 = st.tabs([":briefcase: Data collection", ":clipboard: Data Modelling_Reg", ":clipboard: Data Modelling_Reg",":chart_with_upwards_trend: Data Prediction"])
+tab1, tab2, tab3, tab4 = st.tabs([":briefcase: Data collection", ":clipboard: Data Modelling_Reg", ":clipboard: Data Modelling_Cla",":chart_with_upwards_trend: Data Prediction"])
 
 with tab1:
     if st.button("Data View"):
@@ -409,3 +409,5 @@ with tab4:
         # Predict
         predicted_probability = predict_probability(input_features, selected_model)
         st.write("Predicted value:", predicted_probability)
+        
+        
